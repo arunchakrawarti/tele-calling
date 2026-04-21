@@ -17,10 +17,9 @@ export default function Header({ onMenuClick,title }) {
         </div>
         <div className="flex items-center gap-4 border border-gray-800 rounded-lg">
           <div className="flex items-center gap-3 bg-[#0f172a] border border-white/10 px-4 py-2 rounded-xl shadow-sm">
-            <div className="h-10 w-10 flex items-center justify-center 
-            rounded-full bg-blue-600 text-white font-semibold">
-              A
-            </div>
+            <div className="h-10 w-10 flex items-center justify-center rounded-full bg-blue-600 text-white font-semibold">
+  A
+</div>
             <div className="flex flex-col leading-tight">
               <span className="text-md font-medium">Admin User</span>
               <span className="text-xs text-gray-400">

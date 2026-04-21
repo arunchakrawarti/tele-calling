@@ -31,16 +31,7 @@ export const SideBarData = [
       {
         title: "Reports",
         icon: "ri-bar-chart-box-line",
-        link: "#",
-        children: [
-          { title: "Task Report", link: "/reports/task-report" },
-          { title: "Leads Report", link: "/reports/leads-report" },
-          { title: "Activity Reports", link: "/reports/activity-report" },
-          { title: "Schedules", link: "/reports/schedules" },
-          { title: "Performance Reports", link: "/reports/performance-report" },
-          { title: "Status Wise Report", link: "/reports/statuswise-report" },
-          { title: "Pending FollowUps", link: "/reports/pending-followups" },
-        ],
+        link: "/strategy-builder",
       },
     ],
   },

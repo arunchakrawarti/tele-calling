@@ -11,7 +11,7 @@ const variantClasses = {
   success: "bg-[var(--color-green-400)] text-[var(--color-white)]",
   danger: "bg-white text-gray-500",
   bluebtn:"bg-[#1a335d] !text-white",
-  secondary:" bg-blue-500 text-white",
+  secondary:" bg-blue-600 text-white",
   gradientcolor:"bg-gradient-to-r from-[#3b82f6] to-[#7c3aed] text-white font-bold "
 };
 
@@ -24,7 +24,7 @@ function Button({
   href,
   height = "h-10",
   width = "px-4",
-  rounded = "rounded-[4px]",
+  rounded = "rounded-[9px]",
   className,
   loading,
   ...props
