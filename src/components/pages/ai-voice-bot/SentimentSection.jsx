@@ -58,7 +58,7 @@ const SentimentSection = () => {
           {sentimentData.map((item) => (
             <div key={item.name}>
               <div className="flex justify-between mb-1">
-                <span className="text-sm font-medium text-white">
+                <span className="text-responsive">
                   {item.name}
                 </span>
                 <span className="text-sm text-gray-400">
@@ -91,7 +91,7 @@ const SentimentSection = () => {
           </button>
         </div>
       </div>
-      <div className="bg-custom-dark rounded-lg border border-white/10 p-6">
+      <div className="bg-custom-dark rounded">
         <h3 className="h1 mb-4">
           Recent Calls
         </h3>
@@ -104,8 +104,8 @@ const SentimentSection = () => {
             >
               <div className="flex items-start justify-between">
                 <div>
-                  <p className="font-medium text-white">{call.customer}</p>
-                  <p className="text-xs text-gray-400">
+                  <p className="text-responsive">{call.customer}</p>
+                  <p className="text-xs text-gray-400 mt-1">
                     {call.id} • {call.time}
                   </p>
                 </div>

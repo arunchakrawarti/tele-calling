@@ -73,7 +73,7 @@ const ReportTemplates = () => {
               </span>
 
             </div>
-            <h4 className="font-semibold text-white mb-1">
+            <h4 className="text-responsive mb-1">
               {report.name}
             </h4>
 

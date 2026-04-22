@@ -69,17 +69,17 @@ const RecentVisits = () => {
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-3 text-sm">
                   <div>
                     <p className="text-gray-500">Agent</p>
-                    <p className="font-medium text-gray-200">{visit.agent}</p>
+                    <p className="text-responsive mt-1">{visit.agent}</p>
                   </div>
 
                   <div>
                     <p className="text-gray-500">Time</p>
-                    <p className="font-medium text-gray-200">{visit.time}</p>
+                    <p className="text-responsive mt-1">{visit.time}</p>
                   </div>
 
                   <div>
                     <p className="text-gray-500">Outcome</p>
-                    <p className="font-medium text-gray-200">{visit.outcome}</p>
+                    <p className="text-responsive mt-1">{visit.outcome}</p>
                   </div>
 
                   <div>

@@ -1,3 +1,4 @@
+import Button from "@/components/common/Button";
 import { Download, FileText } from "lucide-react";
 import React from "react";
 
@@ -52,22 +53,18 @@ const RecentReports = () => {
               </div>
 
               <div>
-                <h4 className="font-medium text-white">
+                <h4 className="text-responsive">
                   {report.name}
                 </h4>
 
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-gray-400 mt-1">
                   {report.format} • {report.size} • Generated {report.generated}
                 </p>
               </div>
 
             </div>
-
-            {/* Right */}
             <div>
-              <button className="p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition">
-                <Download className="w-5 h-5 text-gray-300" />
-              </button>
+              <Button icon={Download} variant="default"/>
             </div>
 
           </div>

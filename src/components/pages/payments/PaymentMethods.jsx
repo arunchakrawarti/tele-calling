@@ -71,10 +71,10 @@ const PaymentMethods = ({ activeTab }) => {
                     </div>
 
                     <div>
-                      <h4 className="text-white text-sm sm:text-base">
+                      <h4 className="text-responsive">
                         {payment.customerName}
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-400">
+                      <p className="text-xs sm:text-sm text-gray-400 mt-1">
                         Customer ID: {payment.customerId}
                       </p>
 
@@ -97,7 +97,7 @@ const PaymentMethods = ({ activeTab }) => {
                 </div>
 
                 <div className="mt-4 p-3 bg-white/5 rounded-lg">
-                  <p className="text-xs sm:text-sm text-white mb-2">
+                  <p className="text-responsive mb-2">
                     ✓ Emergency Actions Triggered:
                   </p>
 
@@ -153,11 +153,11 @@ const PaymentMethods = ({ activeTab }) => {
                       </div>
 
                       <div>
-                        <h4 className="text-white text-sm sm:text-base">
+                        <h4 className="text-responsive">
                           {ptp.customerName}
                         </h4>
 
-                        <p className="text-xs sm:text-sm text-gray-400">
+                        <p className="text-xs sm:text-sm text-gray-400 mt-1">
                           Customer ID: {ptp.customerId}
                         </p>
 

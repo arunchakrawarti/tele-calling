@@ -63,7 +63,7 @@ const Performance = () => {
                 {/* Top */}
                 <div className="flex items-start justify-between mb-3">
                   <div>
-                    <h4 className="font-medium text-white">
+                    <h4 className="text-responsive">
                       {agent.name}
                     </h4>
                     <p className="text-sm text-gray-400">

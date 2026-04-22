@@ -40,7 +40,7 @@ const RecoveryTeamCard = ({
         ))}
       </div>
       <div className="bg-black/40 rounded-lg border border-gray-700 p-4 space-y-3">
-        <p className="text-white text-sm font-medium">
+        <p className="text-responsive">
           Assigned to Campaigns:
         </p>
 

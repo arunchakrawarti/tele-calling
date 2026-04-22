@@ -60,7 +60,7 @@ const ChartsSection = () => {
           </ResponsiveContainer>
         </div>
         
-       <div className="bg-[#161b2e] rounded-lg border border-white/10 p-6">
+       <div className="rounded bg-custom-dark">
           <h3 className=" mb-4 h1">Call Outcomes</h3>
           <ResponsiveContainer width="100%" height={300}>
             <PieChart>

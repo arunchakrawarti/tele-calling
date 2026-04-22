@@ -50,7 +50,7 @@ const RealTimeAlerts = () => {
           >
             <alert.icon className={`${alert.iconColor} mt-1 flex-shrink-0`} size={20} />
             <div>
-              <p className="text-gray-100 text-sm font-medium leading-tight">{alert.message}</p>
+              <p className="text-responsive">{alert.message}</p>
               <p className="text-gray-500 text-xs mt-2">{alert.time}</p>
             </div>
           </div>

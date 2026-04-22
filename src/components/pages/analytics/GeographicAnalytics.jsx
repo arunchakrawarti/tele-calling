@@ -20,7 +20,7 @@ const GeographicAnalytics = () => {
           {cityRecovery.map((city) => (
             <div key={city.city} className="p-4 bg-gray-800/50 rounded-lg">
               <div className="flex items-center justify-between mb-2">
-                <h4 className="font-semibold text-white">{city.city}</h4>
+                <h4 className="text-responsive">{city.city}</h4>
                 <span className="text-2xl font-bold text-green-400">
                   ₹{(city.recovery / 1000).toFixed(0)}K
                 </span>

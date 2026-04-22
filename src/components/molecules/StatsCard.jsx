@@ -32,8 +32,8 @@ const StatsCard = ({
 
   return (
     <div className={`
-      ${isSolid ? solidStyles[color] : 'bg-custom-dark rounded'} 
-     w-full
+      ${isSolid ? solidStyles[color] : 'bg-custom-dark'} 
+      rounded  w-full shadow-lg transition-all
     `}>
       <div className="flex justify-between items-start mb-2">
         <span className={`${isSolid ? 'text-white/80' : 'text-gray-400'} text-sm font-medium`}>
@@ -48,7 +48,7 @@ const StatsCard = ({
         </div>
       </div>
       <div className="space-y-1">
-        <h2 className="text-white text-3xl font-semibold tracking-tight">{value}</h2>
+        <h2 className="text-white text-4xl font-semibold tracking-tight">{value}</h2>
       
         {trend && (
           <div className={`flex items-center gap-1 text-sm font-medium 

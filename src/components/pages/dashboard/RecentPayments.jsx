@@ -18,7 +18,7 @@ const RecentPayments = () => {
         {payments.map((payment) => (
           <div key={payment.id} className="bg-[#0f111a] border border-[#262b3f] rounded-xl p-4 flex justify-between items-center">
             <div>
-              <h4 className="text-gray-100 font-medium text-sm">{payment.name}</h4>
+              <h4 className="text-responsive">{payment.name}</h4>
               <p className="text-gray-500 text-[11px] mt-1 tracking-wider">{payment.date}</p>
             </div>
             <div className="text-right">

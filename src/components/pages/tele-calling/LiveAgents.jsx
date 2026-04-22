@@ -61,7 +61,7 @@ const LiveAgents = () => {
               <div className="flex items-start justify-between gap-3 mb-3 flex-wrap">
                 <div>
                   <div className="flex items-center gap-2 flex-wrap">
-                    <h4 className="font-semibold text-white text-sm sm:text-base">
+                    <h4 className="text-responsive">
                       {agent.name}
                     </h4>
 
@@ -88,8 +88,6 @@ const LiveAgents = () => {
                   </div>
                 )}
               </div>
-
-              {/* Customer Info */}
               {agent.customer && (
                 <div className="mb-3">
                   <p className="text-xs sm:text-sm text-gray-400">

@@ -20,7 +20,7 @@ export default QuickActions;
 const QuickActionCard = ({ icon: Icon, label, bgColor, borderColor, iconColor }) => (
   <button className={`flex flex-col items-center justify-center gap-3 p-6 rounded-2xl border ${borderColor} ${bgColor} transition-all duration-300 hover:scale-[1.02] hover:brightness-125 w-full`}>
     <Icon className={iconColor} size={28} />
-    <span className="text-white text-sm font-medium">{label}</span>
+    <span className="text-responsive">{label}</span>
   </button>
 );
  const actions = [

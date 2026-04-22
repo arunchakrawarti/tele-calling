@@ -103,7 +103,7 @@ const MapView = () => {
               <div className="flex items-start justify-between mb-3">
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <h4 className="font-semibold text-gray-100">
+                    <h4 className="text-responsive">
                       {agent.name}
                     </h4>
 
@@ -159,7 +159,7 @@ const MapView = () => {
                     className="flex items-start justify-between text-sm p-2 bg-gray-800/50 rounded"
                   >
                     <div>
-                      <p className="font-medium text-gray-200">
+                      <p className="text-responsive">
                         {visit.customer}
                       </p>
                       <p className="text-xs text-gray-400">

@@ -99,7 +99,7 @@ const NodeCard = ({ icon: Icon, label, border, bg }) => {
       className={`border ${border} ${bg} p-4 rounded-xl text-white flex items-center gap-3 cursor-pointer transition hover:scale-[1.02] hover:shadow-lg`}
     >
       <Icon className="w-5 h-5" />
-      <span className="text-sm md:text-base font-medium">{label}</span>
+      <span className="text-responsive">{label}</span>
     </div>
   );
 };

@@ -30,7 +30,7 @@ const CallQueue = () => {
                       #{index + 1}
                     </span>
 
-                    <h4 className="font-medium text-white">
+                    <h4 className="text-responsive">
                       {customer.name}
                     </h4>
 
@@ -50,8 +50,6 @@ const CallQueue = () => {
                     <span>₹{customer.amount.toLocaleString()}</span>
                   </div>
                 </div>
-
-                {/* Right */}
                 <button className="px-3 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm">
                   Assign
                 </button>

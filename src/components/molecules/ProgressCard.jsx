@@ -22,7 +22,7 @@ const ProgressCard = ({
 }) => {
   return (
     <div className={clsx(
-      "bg-custom-dark rounded w-full  hover:border-[#353b54]",
+      "bg-custom-dark rounded w-full",
       className
     )}>
       <div className="flex justify-between items-start mb-5">
