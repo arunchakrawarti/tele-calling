@@ -1,8 +1,5 @@
 import StatsCard from '@/components/molecules/StatsCard';
-import {
-  Phone,
-  Clock,
-} from "lucide-react";
+import { Phone, PhoneIncoming, PhoneMissed, Clock } from 'lucide-react';
 import React from 'react'
 import Profile from './Profile';
 import Efficiency from './Efficiency';
@@ -16,15 +13,16 @@ import QuickActions from './QuickActions';
 const Mainhome = () => {
   return (
     <div className="">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {stats.map((item, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {callStats.map((stat, index) => (
           <StatsCard 
             key={index}
-            title={item.title}
-            value={item.value}
-            trend={item.trend}
-            isPositive={item.isPositive}
-            Icon={item.icon}
+            title={stat.title}
+            value={stat.value}
+            trend={stat.trend}
+            isPositive={stat.isPositive}
+            Icon={stat.Icon}
+            color={stat.color}
           />
         ))}
       </div>
@@ -47,9 +45,37 @@ const Mainhome = () => {
 }
 
 export default Mainhome
-const stats = [
-    { title: "Total Calls", value: "247", trend: "+12%", isPositive: true, icon: Phone },
-    { title: "Answered", value: "189", trend: "+8%", isPositive: true, icon: Phone },
-    { title: "Missed", value: "58", trend: "-15%", isPositive: false, icon: Phone },
-    { title: "Avg Duration", value: "4:32", trend: "+5%", isPositive: true, icon: Clock },
+const callStats = [
+    {
+      title: "Total Calls",
+      value: "247",
+      trend: "+12%",
+      isPositive: true,
+      Icon: Phone,
+      color: "blue"
+    },
+    {
+      title: "Answered",
+      value: "189",
+      trend: "+8%",
+      isPositive: true,
+      Icon: PhoneIncoming,
+      color: "cyan"
+    },
+    {
+      title: "Missed",
+      value: "58",
+      trend: "-15%",
+      isPositive: false,
+      Icon: PhoneMissed,
+      color: "purple"
+    },
+    {
+      title: "Avg Duration",
+      value: "4:32",
+      trend: "+5%",
+      isPositive: true,
+      Icon: Clock,
+      color: "teal"
+    }
   ];

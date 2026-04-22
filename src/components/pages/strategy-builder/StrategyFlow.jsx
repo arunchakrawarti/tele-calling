@@ -28,7 +28,7 @@ const StrategyFlow = () => {
   const [showNodeSelector, setShowNodeSelector] = useState(false);
 
   return (
-    <div className="bg-custom-dark  border border-gray-800 rounded-xl overflow-hidden">
+    <div className="bg-custom-dark  rounded overflow-hidden">
       <div className="flex justify-between items-center p-4 md:p-6">
         <h2 className="h1">
           Strategy Flow

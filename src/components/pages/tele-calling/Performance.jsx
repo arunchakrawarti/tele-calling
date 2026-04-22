@@ -41,7 +41,7 @@ const mockAgents = [
 
 const Performance = () => {
   return (
-    <div className="bg-custom-dark  rounded-lg border border-gray-800 p-6">
+    <div className="bg-custom-dark  rounded">
       
       <h3 className="mb-4 h1">
         Agent Performance (Today)

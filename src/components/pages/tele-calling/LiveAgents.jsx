@@ -39,7 +39,7 @@ const liveAgents = [
 
 const LiveAgents = () => {
   return (
-    <div className="bg-custom-dark rounded-xl border border-gray-800 p-4 sm:p-6">
+    <div className="bg-custom-dark rounded">
       <h3 className="h1 mb-4">Live Agent Monitor</h3>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-4">
@@ -58,7 +58,6 @@ const LiveAgents = () => {
                     : "border-gray-700 bg-gray-800/30"
               }`}
             >
-              {/* Header */}
               <div className="flex items-start justify-between gap-3 mb-3 flex-wrap">
                 <div>
                   <div className="flex items-center gap-2 flex-wrap">
@@ -121,7 +120,7 @@ const LiveAgents = () => {
               )}
 
               {isOnCall && (
-                <div className="grid grid-cols-1 sm:grid-cols-1 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-2">
                   <Button icon={Volume2} variant="secondary">
                     Listen
                   </Button>
@@ -138,8 +137,6 @@ const LiveAgents = () => {
                   </Button>
                 </div>
               )}
-
-              {/* Available */}
               {isAvailable && (
                 <div className="text-center py-2 text-xs sm:text-sm text-gray-500">
                   Ready for next call

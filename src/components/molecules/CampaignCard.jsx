@@ -46,7 +46,7 @@ const CampaignCard = ({ data }) => {
   ];
 
   return (
-    <div className="bg-custom-dark border border-gray-700 text-gray-300 p-4 sm:p-6 rounded-xl w-full mb-6 font-inter">
+    <div className="bg-custom-dark  text-gray-300 rounded w-full mb-6 font-inter">
 
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-6">
         <div>

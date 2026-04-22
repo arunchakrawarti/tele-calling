@@ -29,7 +29,7 @@ const MainStrategy = () => {
       />
       <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
         <div className="md:col-span-8 space-y-5">
-          <div className="flex flex-col md:flex-row gap-5 md:gap-10 bg-[#141a2b] border border-gray-800 p-4 md:p-6 rounded-xl">
+          <div className="flex flex-col md:flex-row gap-5 md:gap-10 bg-[#141a2b] rounded">
             <div className="flex-1">
               <Input
                 label="Strategy Name"
@@ -48,7 +48,7 @@ const MainStrategy = () => {
           <StrategyFlow />
         </div>
         <div className="md:col-span-4 space-y-5">
-          <div className="bg-[#141a2b] border border-gray-800 p-6 md:p-8 rounded-xl flex flex-col items-center justify-center text-center min-h-[200px] md:min-h-[300px]">
+          <div className="bg-custom-dark rounded flex flex-col items-center justify-center text-center min-h-[200px] md:min-h-[300px]">
             <div className="mb-4 md:mb-6">
               <Settings
                 className="w-10 h-10 md:w-14 md:h-14 text-[#3d4b66]"
@@ -59,7 +59,7 @@ const MainStrategy = () => {
               Select a node to configure its parameters
             </p>
           </div>
-          <div className="bg-[#141a2b] border border-gray-800 p-4 md:p-6 rounded-xl space-y-4">
+          <div className="bg-custom-dark rounded space-y-4">
             <h3 className="h1">
               Campaign Info
             </h3>

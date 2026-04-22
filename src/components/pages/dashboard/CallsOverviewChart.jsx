@@ -14,7 +14,7 @@ const data = [
 
 const CallsOverviewChart = () => {
   return (
-    <div className="bg-custom-dark border border-gray-700 rounded-2xl p-6 w-full h-[400px]">
+    <div className="bg-custom-dark rounded w-full h-[400px]">
       <div className="flex justify-between items-center mb-8">
         <div>
           <h3 className="h1">Calls Overview</h3>

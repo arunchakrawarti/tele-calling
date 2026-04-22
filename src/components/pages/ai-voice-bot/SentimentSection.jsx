@@ -49,7 +49,7 @@ const sentimentStyles = {
 const SentimentSection = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 mt-5 gap-6">
-      <div className="bg-custom-dark rounded-lg border border-white/10 p-6">
+      <div className="bg-custom-dark rounded">
         <h3 className="h1 mb-4">
           Sentiment Analysis
         </h3>

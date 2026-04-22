@@ -12,7 +12,7 @@ const RecoveryTeamCard = ({
   campaigns = [],
 }) => {
   return (
-    <div className="bg-custom-dark border border-gray-700 rounded-2xl p-6 space-y-5 shadow-md">
+    <div className="bg-custom-dark rounded space-y-5">
       <div className="flex justify-between items-start">
         <div>
           <h2 className="h1">{title}</h2>

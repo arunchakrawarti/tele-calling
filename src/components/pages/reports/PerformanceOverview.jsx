@@ -21,7 +21,7 @@ const PerformanceOverview = () => {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-5">
-      <div className="bg-custom-dark  rounded-xl border border-gray-800 p-6">
+      <div className="bg-custom-dark  rounded">
         <h3 className="h1 mb-4">
           Monthly Performance Overview
         </h3>
@@ -57,7 +57,7 @@ const PerformanceOverview = () => {
           </LineChart>
         </ResponsiveContainer>
       </div>
-      <div className="bg-custom-dark  rounded-xl border border-gray-800 p-6">
+      <div className="bg-custom-dark  rounded">
 
         <h4 className="h1 mb-4">
           Weekly Activity

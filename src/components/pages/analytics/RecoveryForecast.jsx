@@ -19,7 +19,7 @@ const RecoveryForecast = () => {
   ];
   return (
     <div>
-      <div className="bg-custom-dark rounded-lg border border-gray-800 p-6 mt-5">
+      <div className="bg-custom-dark rounded mt-5">
         <h3 className="h1 mb-4">
           Recovery Forecast (AI Predicted)
         </h3>

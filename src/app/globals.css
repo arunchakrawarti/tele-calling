@@ -50,6 +50,17 @@
   @apply  text-gray-400 text-base sm:text-[0.98rem] lg:text-[1rem]
 }
 
+.rounded {
+  @apply 
+    rounded-lg sm:rounded-xl md:rounded-2xl 
+    p-3 sm:p-4 md:p-6 
+    border border-gray-800 
+    shadow-lg
+    transform transition-all duration-300 ease-in-out
+    hover:scale-[1.02] 
+    active:scale-[0.98];
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }

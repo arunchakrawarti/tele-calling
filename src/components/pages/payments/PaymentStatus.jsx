@@ -16,7 +16,7 @@ const PaymentStatus = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-5">
         
-      <div className="bg-custom-dark  border border-white/10 rounded-xl p-6">
+      <div className="bg-custom-dark  rounded">
         <h3 className="h1 mb-4">Payment Methods (Today)</h3>
 
         <div className="space-y-3">

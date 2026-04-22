@@ -62,7 +62,7 @@ const PaymentMethods = ({ activeTab }) => {
           ? mockPayments.map((payment) => (
               <div
                 key={payment.id}
-                className="p-3 sm:p-4 border border-white/10 rounded-xl hover:border-white/20 bg-[#0f1419] transition"
+                className="rounded bg-[#0f1419]"
               >
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
                   <div className="flex items-start gap-3 sm:gap-4">

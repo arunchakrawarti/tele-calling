@@ -3,7 +3,7 @@ import React from 'react'
 const AutoSummary = () => {
   return (
     <div>
-      <div className="bg-custom-dark rounded-lg border border-gray-800 p-6 mt-5">
+      <div className="bg-custom-dark rounded mt-5">
         <h3 className="mb-4 h1">Auto QA Summary</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-4 bg-green-500/10 border border-green-500/30 rounded-lg">

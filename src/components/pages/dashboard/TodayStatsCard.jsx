@@ -8,7 +8,7 @@ const TodayStatsCard = () => {
   const strokeDashoffset = circumference - (percentage / 100) * circumference;
 
   return (
-    <div className="bg-custom-dark border border-gray-700 rounded-2xl p-6 h-full flex flex-col">
+    <div className="bg-custom-dark rounded h-full flex flex-col">
       <div className="flex justify-between items-center mb-6">
         <h3 className="h1">Today</h3>
         <Phone className="text-[#00d2ff]" size={20} />

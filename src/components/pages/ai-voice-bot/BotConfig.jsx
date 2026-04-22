@@ -3,7 +3,7 @@ import React from "react";
 
 const BotConfig = () => {
   return (
-    <div className="bg-custom-dark p-6 rounded-lg mt-5 border border-white/10">
+    <div className="bg-custom-dark rounded mt-5">
       <h3 className="h1 mb-4">Bot Configuration</h3>
 
       <div className="grid grid-cols-3 gap-6">

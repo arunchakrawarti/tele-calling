@@ -2,7 +2,7 @@ import React from 'react';
 
 const Profile = () => {
   return (
-    <div className="bg-custom-dark border border-gray-700 rounded-2xl p-6 h-full flex flex-col justify-between">
+    <div className="bg-custom-dark rounded h-full flex flex-col justify-between">
       <div className="flex justify-between items-center">
         <h3 className="h1">Agent Profile</h3>
         <div className="flex items-center gap-2">

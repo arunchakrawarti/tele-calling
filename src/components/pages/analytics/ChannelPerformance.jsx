@@ -28,7 +28,7 @@ const riskDistribution = [
   return (
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-5">
-        <div className="bg-custom-dark rounded-lg border border-gray-800 p-6">
+        <div className="bg-custom-dark rounded">
           <h3 className="mb-4 h1">Channel Performance vs Cost</h3>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={channelPerformance}>

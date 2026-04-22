@@ -40,7 +40,7 @@ const SentimentAnalytics = () => {
           </ResponsiveContainer>
         </div>
 
-        <div className="bg-custom-dark rounded-lg border border-gray-800 p-6">
+        <div className="bg-custom-dark rounded">
           <h3 className="h1 mb-4">AI Recommendations</h3>
           <div className="space-y-4">
             <div className="p-4 bg-green-500/10 border border-green-500/30 rounded-lg">

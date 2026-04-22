@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tabs = ({ activeTab, setActiveTab }) => {
   return (
-    <div className="flex border-b border-white/10 mt-5">
+    <div className="flex border-b border-gray-800 mt-5">
       <button
         onClick={() => setActiveTab("payments")}
         className={`px-6 py-3 ${

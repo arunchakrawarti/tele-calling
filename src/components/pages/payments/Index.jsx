@@ -1,43 +1,44 @@
 "use client";
 import Heading from "@/components/atoms/Heading";
-import { DollarSign, Calendar, Clock, CheckCircle } from "lucide-react";
+import { DollarSign, Calendar, Clock, CheckCircle2 } from 'lucide-react';
 import React, { useState } from "react";
 import EmergencyAlert from "./EmergencyAlert";
 import PaymentMethods from "./PaymentMethods";
 import Tabs from "./Tabs";
 import PaymentStatus from "./PaymentStatus";
+import StatsCard from "@/components/molecules/StatsCard";
 
 const Mainpayment = () => {
   const [activeTab, setActiveTab] = useState("payments");
-  const stats = [
+ const paymentStats = [
     {
       title: "Payments Today",
       value: "12",
-      sub: "₹5.8L collected",
-      icon: DollarSign,
-      color: "text-green-400",
+      subText: "₹5.8L collected", // Green subtext
+      Icon: DollarSign,
+      color: "green"
     },
     {
       title: "Active PTPs",
       value: "85",
-      sub: "₹42.5L expected",
-      icon: Calendar,
-      color: "text-blue-400",
+      subText: "₹42.5L expected",
+      Icon: Calendar,
+      color: "blue"
     },
     {
       title: "PTPs Due Today",
       value: "5",
-      sub: "₹2.8L pending",
-      icon: Clock,
-      color: "text-orange-400",
+      subText: "₹2.8L pending", // Orange/Yellow subtext
+      Icon: Clock,
+      color: "orange"
     },
     {
       title: "PTP Fulfillment",
       value: "72%",
-      sub: "This month",
-      icon: CheckCircle,
-      color: "text-purple-400",
-    },
+      subText: "This month",
+      Icon: CheckCircle2,
+      color: "purple"
+    }
   ];
 
   return (
@@ -55,19 +56,12 @@ const Mainpayment = () => {
         ]}
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        {stats.map((s, i) => (
-          <div
-            key={i}
-            className="bg-custom-dark  border border-white/10 rounded-xl p-5"
-          >
-            <div className="flex items-center justify-between mb-2">
-              <p className="text-sm text-gray-400">{s.title}</p>
-              <s.icon className={`w-5 h-5 ${s.color}`} />
-            </div>
-            <p className="text-3xl text-white mb-2">{s.value}</p>
-            <p className="text-sm text-gray-400">{s.sub}</p>
-          </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {paymentStats.map((stat, index) => (
+          <StatsCard 
+            key={index}
+            {...stat} 
+          />
         ))}
       </div>
       <EmergencyAlert />

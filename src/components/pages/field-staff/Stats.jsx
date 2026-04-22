@@ -1,28 +1,46 @@
-import { MapPin, CheckCircle, Clock, User } from "lucide-react";
+import StatsCard from '@/components/molecules/StatsCard';
+import { Users, MapPin, CheckCircle, Clock } from 'lucide-react';
 
 const Stats = () => {
+  const visitStats = [
+    {
+      title: "Total Agents",
+      value: "5",
+      subText: "2 on field now",
+      Icon: Users,
+      color: "blue"
+    },
+    {
+      title: "Visits Today",
+      value: "7",
+      subText: "5 completed", 
+      Icon: MapPin,
+      color: "green"
+    },
+    {
+      title: "Recovery Today",
+      value: "₹2.1L",
+      subText: "From field visits",
+      Icon: CheckCircle,
+      color: "purple"
+    },
+    {
+      title: "Avg Visit Time",
+      value: "45",
+      subText: "Minutes",
+      Icon: Clock,
+      color: "orange"
+    }
+  ];
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
-      
-      {[
-        { title: "Total Agents", value: "5", sub: "2 on field", icon: User, color: "blue" },
-        { title: "Visits Today", value: "7", sub: "5 completed", icon: MapPin, color: "green" },
-        { title: "Recovery", value: "₹2.1L", sub: "From visits", icon: CheckCircle, color: "purple" },
-        { title: "Avg Time", value: "45", sub: "Minutes", icon: Clock, color: "orange" },
-      ].map((item, i) => {
-        const Icon = item.icon;
-        return (
-          <div key={i} className="bg-custom-dark border border-gray-800 p-5 rounded-xl">
-            <div className="flex justify-between mb-2">
-              <p className="text-gray-400 text-sm">{item.title}</p>
-              <Icon className={`w-5 h-5 text-${item.color}-400`} />
-            </div>
-            <p className="text-2xl font-bold text-white">{item.value}</p>
-            <p className="text-xs text-gray-500">{item.sub}</p>
-          </div>
-        );
-      })}
-    </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {visitStats.map((stat, index) => (
+          <StatsCard 
+            key={index}
+            {...stat} 
+          />
+        ))}
+      </div>
   );
 };
 
