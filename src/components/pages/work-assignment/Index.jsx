@@ -10,7 +10,7 @@ const MainAssignment = () => {
     <div>
       <Heading title="Work Assignment" paragraph="Assign customers to different channels based on strategy" />
       <div>
-        <h1 className='text-xl text-white mb-3'>Select Channel</h1>
+        <h1 className='h1  mb-3'>Select Channel</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {progressData.map((item, index) => (
           <ProgressCard 

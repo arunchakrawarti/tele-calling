@@ -36,9 +36,9 @@ const RealTimeAlerts = () => {
   ];
 
   return (
-    <div className="bg-[#161b2e] border border-gray-700  rounded-2xl p-6 w-full h-full">
+    <div className="bg-custom-dark border border-gray-700  rounded-2xl p-6 w-full h-full">
       <div className="flex justify-between items-center mb-6">
-        <h3 className="text-white text-lg font-semibold">Real-time Alerts</h3>
+        <h3 className="h1">Real-time Alerts</h3>
         <AlertCircle className="text-orange-500" size={20} />
       </div>
 

@@ -32,9 +32,9 @@ const ProgressCard = ({
               <Icon size={24} className={iconColor} />
             </div>
           )}
-          <h3 className="text-white text-xl tracking-tight">{title}</h3>
+          <h3 className="h1">{title}</h3>
           {description && (
-            <p className="text-gray-400 text-md">
+            <p className="paragraph">
               {description}
             </p>
           )}

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Profile = () => {
   return (
-    <div className="bg-[#161b2e] border border-gray-700 rounded-2xl p-6 h-full flex flex-col justify-between">
+    <div className="bg-custom-dark border border-gray-700 rounded-2xl p-6 h-full flex flex-col justify-between">
       <div className="flex justify-between items-center">
-        <h3 className="text-white text-lg font-semibold">Agent Profile</h3>
+        <h3 className="h1">Agent Profile</h3>
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 bg-green-500 rounded-full"></span>
           <span className="text-[15px] text-green-500 ">ONLINE</span>

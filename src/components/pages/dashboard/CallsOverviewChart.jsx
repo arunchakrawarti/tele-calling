@@ -14,10 +14,10 @@ const data = [
 
 const CallsOverviewChart = () => {
   return (
-    <div className="bg-[#161b2e] border border-gray-700 rounded-2xl p-6 w-full h-[400px]">
+    <div className="bg-custom-dark border border-gray-700 rounded-2xl p-6 w-full h-[400px]">
       <div className="flex justify-between items-center mb-8">
         <div>
-          <h3 className="text-white text-lg font-semibold tracking-tight">Calls Overview</h3>
+          <h3 className="h1">Calls Overview</h3>
           <p className="text-gray-400 text-sm">Hourly call distribution</p>
         </div>
         <div className="flex">
@@ -52,7 +52,7 @@ export default CallsOverviewChart;
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
     return (
-      <div className="bg-[#1e2235] border border-gray-700 p-4 rounded-xl shadow-2xl">
+      <div className="bg-custom-dark border border-gray-700 p-4 rounded-xl shadow-2xl">
         <p className="text-white font-bold mb-1">{label}</p>
         <p className="text-blue-400 text-sm">
           recovery : <span className="font-semibold">₹{(payload[0].value / 100000).toFixed(1)}L</span>

@@ -4,38 +4,14 @@ import clsx from "clsx";
 
 // Predefined color skins
 const colorMap = {
-    incoming: "bg-rose-100 text-rose-700 border-rose-200",
-    sell: "bg-green-100 text-green-700 border-green-200",
-    approved: "bg-linear-to-br from-green-500/80 to-emerald-500/80 text-white",
-    confirmed: "bg-green-100 text-green-700 border-green-200",
-    paid: "bg-green-100 text-green-700 border-green-200",
-    pass: "bg-green-100 text-green-700 border-green-200",
-    delivered: "bg-green-100 text-green-700 border-green-200",
-    resolved: "bg-green-100 text-green-700 border-green-200",
-    pending: "bg-yellow-100 text-yellow-700 border-yellow-200",
-    upcoming: "bg-yellow-100 text-yellow-700 border-yellow-200",
-    rejected: "bg-red-100 text-red-700 border-red-200",
-    cancelled: "bg-red-100 text-red-700 border-red-200 animate-pulse",
-    unpaid: "bg-yellow-100 text-yellow-700 border-yellow-200",
-    active: "bg-green-100 text-green-700 border-green-200",
-    "under review": "bg-blue-100 text-blue-700 border-blue-200",
-    inactive: "bg-gray-100 text-gray-700 border-gray-200",
-    hold:"bg-red-100 text-red-700 border-red-200",
-    completed: "bg-emerald-100 text-emerald-700 border-emerald-200",
-    failed: "bg-rose-100 text-rose-700 border-rose-200",
-    ended: "bg-rose-100 text-rose-700 border-rose-200",
-    bestseller: "bg-teal-400 text-white border-teal-400",
-    "marketing partner":
-        "bg-linear-to-br from-pink-500/80 to-red-500/80 text-white",
-    "business partner":
-        "bg-linear-to-br from-indigo-500/80 to-blue-500/80 text-white",
-    "social partner":
-        "bg-linear-to-br from-green-500/80 to-emerald-500/80 text-white",
-    ["new arrival"]: "bg-yellow-400 text-white border-yellow-400",
+  active: "bg-green-900 text-green-300 border border-green-700",
+  pending: "bg-yellow-900 text-yellow-400 border border-yellow-700",
+  rejected: "bg-red-900 text-red-400 border border-red-700",
+  completed: "bg-emerald-900 text-emerald-400 border border-emerald-700",
+  failed: "bg-rose-900 text-rose-400 border border-rose-700",
+  "tele-calling": "bg-blue-900 text-blue-400 border border-blue-700",
+  field: "bg-red-900 text-red-400 border border-red-700",
 };
-
-
-// Random fallback colors (for unmatched text)
 const randomColors = [
     "bg-pink-100 text-pink-700 border border-pink-200",
     "bg-purple-100 text-purple-700 border border-purple-200",

@@ -6,7 +6,7 @@ const WorkAssignmentTable = () => {
   return (
     <div className="mt-5">
        <div className="flex justify-between items-center mb-6">
-          <h2 className="text-white text-lg font-semibold">Select Customers</h2>
+          <h2 className="h1">Select Customers</h2>
           <div className="flex gap-4 text-sm">
             <button className="text-blue-500 hover:underline">Select All</button>
             <button className="text-gray-400 hover:underline">Clear</button>

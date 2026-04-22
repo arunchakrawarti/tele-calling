@@ -2,13 +2,13 @@ import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
 const variantClasses = {
-  default: "bg-gray-200 text-gray-500",
+  default: "bg-gray-600 text-white",
   outline: "bg-white text-gray-800 border border-gray-300 ",
-  tertiary:"bg-white text-red-600",
+  tertiary:"bg-green-600 text-white",
   redbtn:"bg-red-500 text-white",
   greenbtn:"!bg-[#8cc63f] !text-white",
-  primary: "bg-white border border-gray-300",
-  success: "bg-[var(--color-green-400)] text-[var(--color-white)]",
+  primary: "bg-purple-600 text-white",
+  success: "bg-orange-600 text-white",
   danger: "bg-white text-gray-500",
   bluebtn:"bg-[#1a335d] !text-white",
   secondary:" bg-blue-600 text-white",

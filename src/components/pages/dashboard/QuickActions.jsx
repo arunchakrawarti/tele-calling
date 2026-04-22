@@ -4,8 +4,8 @@ import { UserPlus, TrendingUp, PhoneCall, AlertCircle } from 'lucide-react';
 const QuickActions = () => {
     
   return (
-    <div className="bg-[#161b2e] border border-gray-700  rounded-2xl p-6 w-full mt-5">
-      <h3 className="text-white text-lg font-semibold mb-6">Quick Actions</h3>
+    <div className="bg-custom-dark border border-gray-700  rounded-2xl p-6 w-full mt-5">
+      <h3 className="h1 mb-6">Quick Actions</h3>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {actions.map((action, index) => (

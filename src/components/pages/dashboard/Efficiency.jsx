@@ -7,8 +7,8 @@ const Efficiency = () => {
   const offset = circumference - (percentage / 100) * circumference;
 
   return (
-    <div className="bg-[#161b2e] border border-gray-700 rounded-2xl p-6 h-full flex flex-col items-center">
-      <h3 className="text-white text-lg font-semibold self-start mb-12">Call Efficiency</h3>
+    <div className="bg-custom-dark border border-gray-700 rounded-2xl p-6 h-full flex flex-col items-center">
+      <h3 className="h1 self-start mb-12">Call Efficiency</h3>
       
       <div className="relative flex items-center justify-center flex-grow">
         <svg className="w-48 h-48 transform -rotate-90">

@@ -3,7 +3,7 @@ export const SideBarData = [
     items: [
       {
         title: "Dashboard",
-        icon: "ri-dashboard-2-line",
+        icon: "ri-home-5-line",
         link: "/",
       },
     ],
@@ -12,7 +12,7 @@ export const SideBarData = [
     items: [
       {
         title: "Master List",
-        icon: "ri-team-line",
+        icon: "ri-database-2-line",
         link: "/master-list",
       },
     ],
@@ -20,8 +20,8 @@ export const SideBarData = [
   {
     items: [
       {
-        title: "Automation",
-        icon: "ri-settings-3-line",
+        title: "Work Assignment",
+        icon: "ri-task-line",
         link: "/work-assignment",
       },
     ],
@@ -29,8 +29,8 @@ export const SideBarData = [
   {
     items: [
       {
-        title: "Reports",
-        icon: "ri-bar-chart-box-line",
+        title: "Strategy Builder",
+        icon: "ri-git-branch-line",
         link: "/strategy-builder",
       },
     ],
@@ -38,140 +38,44 @@ export const SideBarData = [
   {
     items: [
       {
-        title: "Leads",
-        icon: "ri-user-search-line",
-        link: "#",
-        children: [
-          { title: "Leads", link: "/lead/leads" },
-          { title: "Lead Status", link: "/lead/lead-status" },
-          { title: "Import Lead", link: "/lead/import-lead" },
-          { title: "Lead Rules", link: "/lead/lead-rules" },
-          { title: "Lead RecycleBin", link: "/lead/lead-recyclebin" },
-        ],
+        title: "Campaigns",
+        icon: "ri-megaphone-line",
+        link: "/compaigns",
       },
     ],
   },
   {
     items: [
       {
-        title: "Email & SMS",
-        icon: "ri-mail-send-line",
-        link: "#",
-        children: [
-          { title: "Create Email", link: "/email-sms/create-email" },
-          { title: "Email History", link: "/email-sms/email-history" },
-          { title: "Bulk Template", link: "/email-sms/bulk-template" },
-          { title: "Bulk Sms&Email List", link: "/email-sms/bulk-sms&email-list" },
-        ],
+        title: "AI Voice Bot",
+        icon: "ri-robot-2-line",
+        link: "/ai-voice-bot",
       },
     ],
   },
   {
     items: [
       {
-        title: "Live Tracking",
-        icon: "ri-mail-send-line",
-        link: "#",
-        children: [
-          { title: "Tracking Dashboard", link: "/live-tracking/tracking-dashboard" },
-          { title: "User Attendence", link: "/live-tracking/user-attendence" },
-          { title: "User Offline", link: "/live-tracking/user-offline" },
-          { title: "Location History", link: "/live-tracking/location-history" },
-          { title: "User Expenses", link: "/live-tracking/user-expenses" },
-        ],
+        title: "Tele Calling",
+        icon: "ri-phone-line",
+        link: "/tele-calling",
       },
     ],
   },
-   {
+  {
     items: [
       {
         title: "Products",
-        icon: "ri-mail-send-line",
-        link: "#",
-        children: [
-          { title: "Product", link: "/products/product" },
-          { title: "Category", link: "/products/category" },
-        ],
+        icon: "ri-box-3-line",
+        link: "/field-staff",
       },
     ],
   },
   {
     items: [
       {
-        title: "Branches",
-        icon: "ri-building-2-line",
-        link: "/branches",
-      },
-    ],
-  },
-  {
-    items: [
-      {
-        title: "Sources",
-        icon: "ri-links-line",
-        link: "/sources",
-      },
-    ],
-  },
-  {
-    items: [
-      {
-        title: "Contact",
-        icon: "ri-contacts-line",
-        link: "/contact",
-      },
-    ],
-  },
-  {
-    items: [
-      {
-        title: "Followup Report",
-        icon: "ri-file-list-3-line",
-        link: "/followup-report",
-      },
-    ],
-  },
-  {
-    items: [
-      {
-        title: "Task",
-        icon: "ri-task-line",
-        link: "/task",
-      },
-    ],
-  },
-  {
-    items: [
-      {
-        title: "Invoice",
-        icon: "ri-file-text-line",
-        link: "/invoice",
-      },
-    ],
-  },
-  {
-    items: [
-      {
-        title: "Mobile Templates",
-        icon: "ri-smartphone-line",
-        link: "/mobile-template",
-      },
-    ],
-  },
-  {
-    items: [
-      {
-        title: "Display Settings",
-        icon: "ri-settings-4-line",
-        link: "/display-settings",
-      },
-    ],
-  },
-  {
-    items: [
-      {
-        title: "Payment",
-        icon: "ri-wallet-3-line",
+        title: "Payments",
+        icon: "ri-bank-card-line",
         link: "/payment",
       },
     ],
@@ -179,9 +83,18 @@ export const SideBarData = [
   {
     items: [
       {
-        title: "IVR Leads",
-        icon: "ri-phone-line",
-        link: "/ivr-leads",
+        title: "Analytics",
+        icon: "ri-bar-chart-2-line",
+        link: "/analytics",
+      },
+    ],
+  },
+  {
+    items: [
+      {
+        title: "Reports",
+        icon: "ri-file-chart-line",
+        link: "/reports",
       },
     ],
   },

@@ -60,7 +60,7 @@ const MainStrategy = () => {
             </p>
           </div>
           <div className="bg-[#141a2b] border border-gray-800 p-4 md:p-6 rounded-xl space-y-4">
-            <h3 className="text-white text-base md:text-lg font-semibold">
+            <h3 className="h1">
               Campaign Info
             </h3>
 

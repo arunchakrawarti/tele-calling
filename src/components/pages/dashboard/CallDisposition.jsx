@@ -3,8 +3,8 @@ import { CheckCircle2, AlertCircle, Phone, Clock } from 'lucide-react';
 
 const CallDisposition = () => {
   return (
-    <div className="bg-[#161b2e] border border-gray-700 rounded-2xl p-6 w-full">
-      <h3 className="text-white text-lg font-semibold">Call Disposition</h3>
+    <div className="bg-custom-dark border border-gray-700 rounded-2xl p-6 w-full">
+      <h3 className="h1">Call Disposition</h3>
       <p className="text-gray-400 text-sm mb-8">Today's outcomes</p>
       
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">

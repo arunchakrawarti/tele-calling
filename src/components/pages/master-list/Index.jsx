@@ -25,7 +25,7 @@ const MainMaster = () => {
           },
         ]}
       />
-      <div className="bg-[#161b2e] border border-gray-700  rounded-2xl p-6 w-full">
+      <div className="bg-custom-dark border border-gray-700  rounded-2xl p-6 w-full">
         <div className="flex items-center gap-2 mb-6">
           <Filter className="text-gray-400" size={20} />
           <h3 className="text-white text-lg font-semibold">Filters</h3>

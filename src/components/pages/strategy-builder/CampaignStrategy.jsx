@@ -11,7 +11,7 @@ const CampaignStrategy = () => {
   ];
 
   return (
-    <div className="bg-[#0b1224] border border-[#1e293b] rounded-xl p-6 w-full shadow-inner">
+    <div className="bg-custom-dark  border border-[#1e293b] rounded-xl p-6 w-full shadow-inner">
       <h2 className="text-[#3b82f6] text-lg font-semibold mb-4 tracking-wide">
         Campaign-Based Strategy Execution
       </h2>

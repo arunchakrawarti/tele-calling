@@ -3,7 +3,7 @@ import { Phone, PhoneIncoming, PhoneMissed, Clock, TrendingUp, TrendingDown } fr
 
 const StatsCard = ({ title, value, trend, isPositive, Icon }) => {
   return (
-    <div className="bg-[#161b2e] border border-gray-700 rounded-xl sm:rounded-2xl p-6 w-full  min-w-[240px] shadow-lg">
+    <div className="bg-custom-dark border border-gray-700 rounded-xl sm:rounded-2xl p-6 w-full  min-w-[240px] shadow-lg">
       <div className="flex justify-between items-start mb-6">
         <span className="text-gray-400 text-sm font-medium font-inter">{title}</span>
         <div className={`p-2 rounded-xl ${isPositive ? 'bg-blue-500/10 text-blue-400' : 'bg-purple-500/10 text-purple-400'}`}>

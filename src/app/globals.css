@@ -8,16 +8,19 @@
 
 @theme {
 
-   --color-primary: #1e3a8a;
-   /* Deep Navy Blue (Sidebar BG) */
-   --color-green-400: #A63A92;
+   /* button color */
+   --color-blue-600: #2563eb;
+
+   --color-green-400: #4ade80;
 
    --color-green-100: #DC9ACC;
 
-   --color-primary-light: #224191;
-   /* Slightly lighter navy */
-   --color-primary-dark: #162d6e;
-   /* Darker for hover/active */
+   /* sidebar color */
+   --color-primary-light: #0a0e1a;
+
+  /* card color */
+   --color-custom-dark: #161b2e;
+   
 
    --color-bg: #f8fafc;
    --color-white: #ffffff;
@@ -34,6 +37,19 @@
 
   
  }
+
+.h1 {
+  @apply text-white text-base sm:text-lg lg:text-[1rem] font-semibold;
+}
+
+.heading{
+  @apply text-white text-base sm:text-lg lg:text-[1.3rem] font-semibold 
+}
+
+.paragraph{
+  @apply  text-gray-400 text-base sm:text-[0.98rem] lg:text-[1rem]
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }

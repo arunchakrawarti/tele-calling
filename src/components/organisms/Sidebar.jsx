@@ -15,7 +15,7 @@ const SideBar = ({ isMobile = false, isOpen = true, onClose }) => {
       <aside
         className={`
           fixed inset-y-0 left-0 z-50
-          w-[80px] bg-[#0f1419] border border-gray-800
+          w-[80px] bg-primary-light border border-gray-800
           flex flex-col items-center
           py-4
           transform transition-transform duration-300

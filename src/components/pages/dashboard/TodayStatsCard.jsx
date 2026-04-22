@@ -8,9 +8,9 @@ const TodayStatsCard = () => {
   const strokeDashoffset = circumference - (percentage / 100) * circumference;
 
   return (
-    <div className="bg-[#161b2e] border border-gray-700 rounded-2xl p-6 h-full flex flex-col">
+    <div className="bg-custom-dark border border-gray-700 rounded-2xl p-6 h-full flex flex-col">
       <div className="flex justify-between items-center mb-6">
-        <h3 className="text-white text-lg font-semibold">Today</h3>
+        <h3 className="h1">Today</h3>
         <Phone className="text-[#00d2ff]" size={20} />
       </div>
       <div className="text-center py-6 border-b border-gray-800/50">
@@ -18,7 +18,7 @@ const TodayStatsCard = () => {
         <p className="text-gray-400 text-sm mt-2">Total calls</p>
       </div>
       <div className="mt-8 flex flex-col items-center">
-        <h3 className="text-white font-medium self-start mb-10">Performance Rating</h3>
+        <h3 className="h1 self-start mb-10">Performance Rating</h3>
         
         <div className="relative flex items-center justify-center">
           <svg width="150" height="150" className="transform -rotate-90">

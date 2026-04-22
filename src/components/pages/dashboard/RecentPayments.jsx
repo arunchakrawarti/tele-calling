@@ -8,9 +8,9 @@ const RecentPayments = () => {
   ];
 
   return (
-    <div className="bg-[#161b2e] border border-gray-700 rounded-2xl p-6 w-full h-full">
+    <div className="bg-custom-dark border border-gray-700 rounded-2xl p-6 w-full h-full">
       <div className="flex justify-between items-center mb-6">
-        <h3 className="text-white text-lg font-semibold">Recent Payments</h3>
+        <h3 className="h1">Recent Payments</h3>
         <button className="text-blue-500 text-sm font-medium hover:underline">View All</button>
       </div>
 
