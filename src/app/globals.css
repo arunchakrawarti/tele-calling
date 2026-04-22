@@ -53,21 +53,14 @@
 .rounded {
   @apply 
     rounded-lg sm:rounded-xl md:rounded-2xl 
-    p-3 sm:p-4 md:p-6 
-    border border-gray-700 
-    shadow-lg
-    transform transition-all duration-300 ease-in-out
-    hover:scale-[1.02] 
-    active:scale-[0.98];
+    p-3 sm:p-4 md:p-6 border border-gray-700 
+    shadow-lg transform transition-all duration-300 ease-in-out
+    hover:scale-[1.02] active:scale-[0.98];
 }
 
 .text-responsive {
   @apply 
-    text-gray-100 
-    font-medium 
-    leading-tight text-xs    sm:text-sm     
-    md:text-base   
-    lg:text-sm;    
+    text-gray-100 font-medium leading-tight text-xs sm:text-sm md:text-base lg:text-[0.92rem];    
 }
 
 .no-scrollbar::-webkit-scrollbar {
