@@ -2,7 +2,7 @@ import RecoveryTeamCard from '@/components/molecules/RecoveryTeamCard';
 import React from 'react'
 
 const UserGroup = () => {
-    const teamData = [
+   const teamData = [
   {
     title: "Senior Collection Team",
     type: "Tele-calling",

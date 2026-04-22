@@ -22,7 +22,7 @@ const MainCompaigns = () => {
           { text: "New Campaign", variant: "primary", icon: "Play" },
         ]}
       />
-      <div className="rounded">
+      <div className="border-b border-gray-800">
         <div className="flex gap-8">
           {tabs.map((tab) => (
             <button
