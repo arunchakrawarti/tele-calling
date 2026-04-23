@@ -1,29 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
+import PaymentMethods from './PaymentMethods';
+import PromisToPay from './PromisToPay';
 
-const Tabs = ({ activeTab, setActiveTab }) => {
+const Tabs = () => {
+  const [activeTab, setActiveTab] = useState("PaymentMethod");
+
+  const tabs = [
+    { name: "PaymentMethod" },
+    { name: "PromisToPay" },
+  ];
   return (
-    <div className="flex border-b border-gray-800 mt-5">
-      <button
-        onClick={() => setActiveTab("payments")}
-        className={`px-6 py-3 ${
-          activeTab === "payments"
-            ? "text-blue-400 border-b-2 border-blue-500"
-            : "text-gray-400"
-        }`}
-      >
-       Recents Payments
-      </button>
+   <div className="mt-5 bg-custom-dark rounded">
+    
+      <div className="flex border-b border-gray-800">
+        <div className="flex gap-10">
+          {tabs.map((tab) => (
+            <button
+              key={tab.name}
+              onClick={() => setActiveTab(tab.name)}
+              className={`flex items-center gap-2 py-4 px-1 text-sm font-medium transition-all relative ${
+                activeTab === tab.name
+                  ? "text-blue-500"
+                  : "text-gray-400 hover:text-gray-200"
+              }`}
+            >
+              {tab.name}
 
-      <button
-        onClick={() => setActiveTab("ptps")}
-        className={`px-6 py-3 ${
-          activeTab === "ptps"
-            ? "text-blue-400 border-b-2 border-blue-500"
-            : "text-gray-400"
-        }`}
-      >
-        Promises to Pay
-      </button>
+              {activeTab === tab.name && (
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-500 rounded-t-full" />
+              )}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="mt-5">
+        {activeTab === "PaymentMethod" && <PaymentMethods />}
+        {activeTab === "PromisToPay" && <PromisToPay />}
+      </div>
+
     </div>
   )
 }

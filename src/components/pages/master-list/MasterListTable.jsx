@@ -2,6 +2,7 @@
 import React from 'react';
 import { Eye } from 'lucide-react';
 import BasicTable from '@/components/common/BasicTable';
+import Badge from '@/components/atoms/Badge';
 
 const MasterListTable = () => {
 
@@ -41,19 +42,9 @@ export default MasterListTable;
     { 
       label: "DPD", 
       key: "dpd",
-      render: (val) => {
-        const colors = {
-          "45 days": "bg-yellow-500/10 text-yellow-500 border-yellow-500/50",
-          "90 days": "bg-red-500/10 text-red-500 border-red-500/50",
-          "15 days": "bg-green-500/10 text-green-500 border-green-500/50",
-          "120 days": "bg-red-700/10 text-red-600 border-red-600/50"
-        };
-        return (
-          <span className={`px-3 py-1 rounded-full border text-xs font-bold ${colors[val] || "bg-gray-500/10"}`}>
-            {val}
-          </span>
-        );
-      }
+      render: (val) => (
+    <Badge text={val} customStyle="text-[11px] capitalize" />
+  )
     },
     { label: "Amount", key: "amount", render: (val) => `₹${val.toLocaleString()}` },
     { 
@@ -66,15 +57,13 @@ export default MasterListTable;
         </div>
       )
     },
-    { 
-      label: "Status", 
-      key: "status",
-      render: (val) => (
-        <span className="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-[11px] font-semibold">
-          {val}
-        </span>
-      )
-    },
+    {
+  label: "Status", 
+  key: "status",
+  render: (val) => (
+    <Badge text={val} customStyle="text-[11px] capitalize" />
+  )
+},
     {
         label: "Tags",
         key: "tags",

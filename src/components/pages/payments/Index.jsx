@@ -3,7 +3,6 @@ import Heading from "@/components/atoms/Heading";
 import { DollarSign, Calendar, Clock, CheckCircle2 } from 'lucide-react';
 import React, { useState } from "react";
 import EmergencyAlert from "./EmergencyAlert";
-import PaymentMethods from "./PaymentMethods";
 import Tabs from "./Tabs";
 import PaymentStatus from "./PaymentStatus";
 import StatsCard from "@/components/molecules/StatsCard";
@@ -67,7 +66,6 @@ const Mainpayment = () => {
       <EmergencyAlert />
       <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
 
-      <PaymentMethods activeTab={activeTab} />
 
       <PaymentStatus/>
     </div>
