@@ -131,7 +131,7 @@ const CampaignCard = ({ data }) => {
                 assignedGroups.map((group, idx) => (
                   <span
                     key={idx}
-                    className="bg-blue-900/20 border border-blue-800 text-blue-400 px-2 sm:px-3 py-0.5 rounded text-xs sm:text-sm"
+                    className="bg-blue-900/20 border border-blue-600 text-blue-400 px-2 sm:px-3 py-0.5 rounded-md text-xs sm:text-sm"
                   >
                     {group}
                   </span>
