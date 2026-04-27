@@ -1,3 +1,4 @@
+import Button from "@/components/common/Button";
 import React from "react";
 
 const callQueue = [
@@ -50,9 +51,9 @@ const CallQueue = () => {
                     <span>₹{customer.amount.toLocaleString()}</span>
                   </div>
                 </div>
-                <button className="px-3 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm">
+                <Button variant="secondary">
                   Assign
-                </button>
+                </Button>
 
               </div>
             </div>

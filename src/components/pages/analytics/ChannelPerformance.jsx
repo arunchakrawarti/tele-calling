@@ -1,5 +1,5 @@
-"use client"
-import React from 'react'
+"use client";
+import React from "react";
 import {
   BarChart,
   Bar,
@@ -10,20 +10,20 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  ResponsiveContainer
+  ResponsiveContainer,
 } from "recharts";
 
 const ChannelPerformance = () => {
-    const channelPerformance = [
-  { channel: "AI Bot", recovery: 325000, cost: 2280, roi: 14250 },
-  { channel: "Tele-calling", recovery: 130000, cost: 2100, roi: 6190 },
-  { channel: "Field Visit", recovery: 125000, cost: 1400, roi: 8929 },
-];
-const riskDistribution = [
-  { name: "Low Risk (0-50)", value: 245, color: "#10b981" },
-  { name: "Medium Risk (51-75)", value: 412, color: "#f59e0b" },
-  { name: "High Risk (76-100)", value: 588, color: "#ef4444" },
-];
+  const channelPerformance = [
+    { channel: "AI Bot", recovery: 325000, cost: 2280, roi: 14250 },
+    { channel: "Tele-calling", recovery: 130000, cost: 2100, roi: 6190 },
+    { channel: "Field Visit", recovery: 125000, cost: 1400, roi: 8929 },
+  ];
+  const riskDistribution = [
+    { name: "Low Risk (0-50)", value: 245, color: "#10b981" },
+    { name: "Medium Risk (51-75)", value: 412, color: "#f59e0b" },
+    { name: "High Risk (76-100)", value: 588, color: "#ef4444" },
+  ];
 
   return (
     <div>
@@ -38,16 +38,25 @@ const riskDistribution = [
               <YAxis yAxisId="right" orientation="right" stroke="#9ca3af" />
               <Tooltip
                 formatter={(value, name) =>
-  name === "recovery"
-    ? `₹${(value / 1000).toFixed(0)}K`
-    : name === "cost"
-    ? `₹${value}`
-    : `${value}x`
-}
-                contentStyle={{ backgroundColor: '#161b2e', border: '1px solid #374151', borderRadius: '8px' }}
-                labelStyle={{ color: '#9ca3af' }}
+                  name === "recovery"
+                    ? `₹${(value / 1000).toFixed(0)}K`
+                    : name === "cost"
+                      ? `₹${value}`
+                      : `${value}x`
+                }
+                contentStyle={{
+                  backgroundColor: "#161b2e",
+                  border: "1px solid #374151",
+                  borderRadius: "8px",
+                }}
+                labelStyle={{ color: "#9ca3af" }}
               />
-              <Bar yAxisId="left" dataKey="recovery" fill="#10b981" name="Recovery" />
+              <Bar
+                yAxisId="left"
+                dataKey="recovery"
+                fill="#10b981"
+                name="Recovery"
+              />
               <Bar yAxisId="right" dataKey="roi" fill="#8b5cf6" name="ROI" />
             </BarChart>
           </ResponsiveContainer>
@@ -68,16 +77,25 @@ const riskDistribution = [
                 dataKey="value"
               >
                 {riskDistribution.map((entry, index) => (
-                  <Cell key={`risk-cell-${index}-${entry.name}`} fill={entry.color} />
+                  <Cell
+                    key={`risk-cell-${index}-${entry.name}`}
+                    fill={entry.color}
+                  />
                 ))}
               </Pie>
-              <Tooltip contentStyle={{ backgroundColor: '#161b2e', border: '1px solid #374151', borderRadius: '8px' }} />
+              <Tooltip
+                contentStyle={{
+                  backgroundColor: "#161b2e",
+                  border: "1px solid #374151",
+                  borderRadius: "8px",
+                }}
+              />
             </PieChart>
           </ResponsiveContainer>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ChannelPerformance
+export default ChannelPerformance;

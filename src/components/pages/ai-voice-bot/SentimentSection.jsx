@@ -2,7 +2,6 @@
 import React from "react";
 import { Play } from "lucide-react";
 
-// ✅ Data sab upar
 const sentimentData = [
   { name: "Positive", value: 156, color: "#10b981" },
   { name: "Neutral", value: 112, color: "#6b7280" },

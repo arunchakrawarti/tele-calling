@@ -1,10 +1,8 @@
 import React from "react";
 import Stats from "./Stats";
 import MapView from "./MapView";
-import AgentsList from "./AgentsList";
 import RecentVisits from "./RecentVisits";
 import Heading from "@/components/atoms/Heading";
-
 
 const MainField = () => {
   return (

@@ -33,8 +33,6 @@ const Tabs = () => {
           ))}
         </div>
       </div>
-
-      {/* Content */}
       <div className="mt-5">
         {activeTab === "PaymentMethod" && <PaymentMethods />}
         {activeTab === "PromisToPay" && <PromisToPay />}

@@ -44,8 +44,6 @@ const RecentReports = () => {
             key={index}
             className="flex items-center justify-between p-4 bg-[#0f1424] border border-gray-800 rounded-xl hover:border-blue-500 transition-all"
           >
-
-            {/* Left */}
             <div className="flex items-center gap-4">
 
               <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center">
