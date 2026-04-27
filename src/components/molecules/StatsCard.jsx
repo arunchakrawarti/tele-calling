@@ -33,7 +33,7 @@ const StatsCard = ({
   return (
     <div className={`
       ${isSolid ? solidStyles[color] : 'bg-custom-dark'} 
-      rounded  w-full shadow-lg transition-all
+      rounded w-full shadow-lg transition-all
     `}>
       <div className="flex justify-between items-start mb-2">
         <span className={`${isSolid ? 'text-white/80' : 'text-gray-400'} text-sm font-medium`}>
