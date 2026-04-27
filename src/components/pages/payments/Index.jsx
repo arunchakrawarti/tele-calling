@@ -13,7 +13,7 @@ const Mainpayment = () => {
     {
       title: "Payments Today",
       value: "12",
-      subText: "₹5.8L collected", // Green subtext
+      subText: "₹5.8L collected", 
       Icon: DollarSign,
       color: "green",
     },
@@ -27,7 +27,7 @@ const Mainpayment = () => {
     {
       title: "PTPs Due Today",
       value: "5",
-      subText: "₹2.8L pending", // Orange/Yellow subtext
+      subText: "₹2.8L pending", 
       Icon: Clock,
       color: "orange",
     },

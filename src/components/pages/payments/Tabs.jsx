@@ -11,7 +11,6 @@ const Tabs = () => {
   ];
   return (
    <div className="mt-5 bg-custom-dark rounded">
-    
       <div className="flex border-b border-gray-800">
         <div className="flex gap-10">
           {tabs.map((tab) => (

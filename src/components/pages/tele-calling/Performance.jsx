@@ -60,7 +60,6 @@ const Performance = () => {
                 key={agent.id}
                 className="p-4 border border-gray-700 rounded-lg"
               >
-                {/* Top */}
                 <div className="flex items-start justify-between mb-3">
                   <div>
                     <h4 className="text-responsive">
@@ -82,8 +81,6 @@ const Performance = () => {
                     {agent.status}
                   </span>
                 </div>
-
-                {/* Stats */}
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
                     <p className="text-2xl font-bold text-blue-400">
