@@ -3,7 +3,7 @@ export const SideBarData = [
     items: [
       {
         title: "Dashboard",
-        icon: "ri-home-5-line",
+        icon: "ri-dashboard-line", 
         link: "/",
       },
     ],
@@ -12,7 +12,7 @@ export const SideBarData = [
     items: [
       {
         title: "Master List",
-        icon: "ri-database-2-line",
+        icon: "ri-group-line", 
         link: "/master-list",
       },
     ],
@@ -21,7 +21,7 @@ export const SideBarData = [
     items: [
       {
         title: "Work Assignment",
-        icon: "ri-task-line",
+        icon: "ri-focus-2-line",
         link: "/work-assignment",
       },
     ],
@@ -30,7 +30,7 @@ export const SideBarData = [
     items: [
       {
         title: "Strategy Builder",
-        icon: "ri-git-branch-line",
+        icon: "ri-node-tree", 
         link: "/strategy-builder",
       },
     ],
@@ -39,7 +39,7 @@ export const SideBarData = [
     items: [
       {
         title: "Campaigns",
-        icon: "ri-megaphone-line",
+        icon: "ri-megaphone-line", 
         link: "/compaigns",
       },
     ],
@@ -48,7 +48,7 @@ export const SideBarData = [
     items: [
       {
         title: "AI Voice Bot",
-        icon: "ri-robot-2-line",
+        icon: "ri-robot-line",
         link: "/ai-voice-bot",
       },
     ],
@@ -57,7 +57,7 @@ export const SideBarData = [
     items: [
       {
         title: "Tele Calling",
-        icon: "ri-phone-line",
+        icon: "ri-phone-line", 
         link: "/tele-calling",
       },
     ],
@@ -66,7 +66,7 @@ export const SideBarData = [
     items: [
       {
         title: "Products",
-        icon: "ri-box-3-line",
+        icon: "ri-map-pin-2-line", 
         link: "/field-staff",
       },
     ],
@@ -75,7 +75,7 @@ export const SideBarData = [
     items: [
       {
         title: "Payments",
-        icon: "ri-bank-card-line",
+        icon: "ri-bank-card-line", 
         link: "/payment",
       },
     ],
@@ -84,7 +84,7 @@ export const SideBarData = [
     items: [
       {
         title: "Analytics",
-        icon: "ri-bar-chart-2-line",
+        icon: "ri-bar-chart-fill", 
         link: "/analytics",
       },
     ],
@@ -93,9 +93,9 @@ export const SideBarData = [
     items: [
       {
         title: "Reports",
-        icon: "ri-file-chart-line",
+        icon: "ri-file-text-line", 
         link: "/reports",
       },
     ],
-  },
+  }
 ];

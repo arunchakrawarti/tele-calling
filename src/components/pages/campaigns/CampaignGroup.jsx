@@ -11,7 +11,7 @@ const CampaignGroup = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-5">
       <div className="bg-[#0b1f3a]  text-blue-200 rounded">
         <h2 className="text-blue-400 font-semibold text-md mb-2">
           How Campaign-Group System Works

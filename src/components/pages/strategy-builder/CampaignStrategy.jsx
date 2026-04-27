@@ -18,9 +18,9 @@ const CampaignStrategy = () => {
       <ul className="space-y-1">
         {instructions.map((text, index) => (
           <li key={index} className="flex items-start gap-3">
-            <span className="mt-[10px] w-1.5 h-1.5 rounded-full bg-[#94a3b8] flex-shrink-0" />
+            <span className="mt-[10px] w-1.5 h-1.5 rounded-full bg-[#8db3f6] flex-shrink-0" />
         
-            <span className="text-[#94a3b8] text-[15px] leading-relaxed">
+            <span className="text-[#8db3f6] text-[15px] leading-relaxed">
               {text}
             </span>
           </li>
