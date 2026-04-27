@@ -27,6 +27,7 @@ const MainAssignment = () => {
 };
 
 export default MainAssignment;
+
  const progressData = [
     {
       title: "AI Voice Bot",

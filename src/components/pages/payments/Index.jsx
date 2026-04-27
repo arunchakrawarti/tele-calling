@@ -9,6 +9,7 @@ import StatsCard from "@/components/molecules/StatsCard";
 
 const Mainpayment = () => {
   const [activeTab, setActiveTab] = useState("payments");
+  
   const paymentStats = [
     {
       title: "Payments Today",

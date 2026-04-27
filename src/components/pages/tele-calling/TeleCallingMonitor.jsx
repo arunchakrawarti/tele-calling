@@ -10,11 +10,7 @@ import Heading from "@/components/atoms/Heading";
 const TeleCallingMonitor = () => {
   return (
     <div className="space-y-6">
-
-      <Heading
-        title="Tele-calling Monitor"
-        paragraph="Real-time monitoring"
-      />
+      <Heading title="Tele-calling Monitor" paragraph="Real-time monitoring" />
 
       <StatsSection />
       <LiveAgents />
@@ -25,7 +21,6 @@ const TeleCallingMonitor = () => {
       </div>
 
       <AlertBox />
-
     </div>
   );
 };

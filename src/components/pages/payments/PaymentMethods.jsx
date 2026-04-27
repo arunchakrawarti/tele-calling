@@ -3,6 +3,7 @@ import PaymentCard from "@/components/molecules/PaymentCard";
 import React from "react";
 
 const PaymentMethods = () => {
+
   const transactions = [
     {
       name: "Rajesh Kumar",
@@ -32,6 +33,7 @@ const PaymentMethods = () => {
       status: "Completed",
     },
   ];
+  
   return (
     <div>
       <div className="w-full">

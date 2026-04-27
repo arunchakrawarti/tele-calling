@@ -8,7 +8,7 @@ import Button from "@/components/common/Button";
 const ReportBuilder = () => {
   return (
     <div className="bg-custom-dark  rounded mt-5">
-
+      
       <h3 className="h1 mb-4">
         Custom Report Builder
       </h3>
