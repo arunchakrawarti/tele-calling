@@ -57,7 +57,7 @@ const Heading = ({
                     : btn.variant === "success" 
                       ? "bg-green-600 hover:bg-green-700 text-white shadow-lg shadow-green-600/20"
                       : btn.variant === "outline"
-                        ? "bg-[#161b2e] border border-gray-700 text-gray-300 hover:bg-gray-800"
+                        ? "bg-[#161b2e] border border-gray-700 text-white hover:bg-gray-800"
                         : "bg-gray-800 text-white"
                 }
               `}

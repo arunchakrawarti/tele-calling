@@ -26,16 +26,16 @@ const Mainhome = () => {
           />
         ))}
       </div>
-      <div className="mt-5 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
         <Profile />
         <Efficiency />
         <TodayStatsCard />
       </div>
-      <div className='mt-5 grid grid-cols-1 md:grid-cols-2 gap-6'>
+      <div className='mt-4 grid grid-cols-1 md:grid-cols-2 gap-4'>
         <CallsOverviewChart/>
         <CallDisposition/>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
   <RealTimeAlerts />
   <RecentPayments />
 </div>

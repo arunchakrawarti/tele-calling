@@ -105,18 +105,18 @@ const SentimentSection = () => {
               <div className="flex items-start justify-between">
                 <div>
                   <p className="text-responsive">{call.customer}</p>
-                  <p className="text-xs text-gray-400 mt-1">
+                  <p className="text-xs text-gray-400 mt-2">
                     {call.id} • {call.time}
                   </p>
                 </div>
 
-                <button className="p-1 hover:bg-white/5 rounded">
+                <button className="p-1 hover:bg-white/5">
                   <Play className="w-4 h-4 text-gray-400" />
                 </button>
               </div>
 
               <div className="flex items-center gap-2 mt-2">
-                <span className="inline-flex px-2 py-0.5 rounded text-xs font-medium bg-blue-500/20 text-blue-400 border border-blue-500/30">
+                <span className="inline-flex px-2 py-0.5 rounded-full text-xs font-medium bg-blue-500/20 text-blue-400 border border-blue-500/30">
                   {call.outcome}
                 </span>
 

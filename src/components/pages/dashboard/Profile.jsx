@@ -7,7 +7,7 @@ const Profile = () => {
         <h3 className="h1">Agent Profile</h3>
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-          <span className="text-[15px] text-green-500 ">ONLINE</span>
+          <span className="text-[13px] text-green-500 ">ONLINE</span>
         </div>
       </div>
 

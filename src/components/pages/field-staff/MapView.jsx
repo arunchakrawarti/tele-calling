@@ -47,7 +47,7 @@ const MapView = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
     
-      <div className="bg-custom-dark rounded-lg border border-gray-800 p-6">
+      <div className="bg-custom-dark rounded">
         <h3 className="mb-4 h1">
           Live Agent Tracking
         </h3>
@@ -87,7 +87,7 @@ const MapView = () => {
           </div>
         </div>
       </div>
-      <div className="bg-custom-dark rounded-lg border border-gray-800 p-6">
+      <div className="bg-custom-dark rounded">
         <h3 className="h1 mb-4">
           Field Agents
         </h3>
@@ -132,14 +132,14 @@ const MapView = () => {
               {/* Stats */}
               <div className="grid grid-cols-2 gap-3 mb-3 text-sm">
                 
-                <div className="text-center p-2 bg-blue-500/10 border border-blue-500/20 rounded">
+                <div className="text-center p-2 bg-blue-500/10 border border-blue-500/20">
                   <p className="text-xl font-bold text-blue-400">
                     {agent.todayCompleted}
                   </p>
                   <p className="text-xs text-gray-400">Completed</p>
                 </div>
 
-                <div className="text-center p-2 bg-green-500/10 border border-green-500/20 rounded">
+                <div className="text-center p-2 bg-green-500/10 border border-green-500/20">
                   <p className="text-xl font-bold text-green-400">
                     ₹{(agent.todayRecovery / 1000).toFixed(0)}K
                   </p>
@@ -156,7 +156,7 @@ const MapView = () => {
                 {agent.visits?.map((visit, idx) => (
                   <div
                     key={idx}
-                    className="flex items-start justify-between text-sm p-2 bg-gray-800/50 rounded"
+                    className="flex items-start justify-between text-sm p-2 bg-gray-800/50"
                   >
                     <div>
                       <p className="text-responsive">
@@ -173,7 +173,7 @@ const MapView = () => {
                       </p>
 
                       <span
-                        className={`inline-flex px-2 py-0.5 rounded text-xs font-medium mt-1 ${
+                        className={`inline-flex px-2 py-0.5 rounded-full text-xs font-medium mt-1 ${
                           visit.status === "In Progress"
                             ? "bg-yellow-500/20 text-yellow-400"
                             : "bg-gray-700 text-gray-400"

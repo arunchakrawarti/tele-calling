@@ -70,7 +70,7 @@ export default MasterListTable;
         render: (tags) => (
             <div className="flex flex-col gap-1">
                 {tags.map((tag, i) => (
-                    <span key={i} className="px-2 py-0.5 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20 text-[10px] w-fit">
+                    <span key={i} className="px-2 py-0.5 rounded-md bg-purple-500/10 text-purple-400 border border-purple-500/20 text-[10px] w-fit">
                         {tag}
                     </span>
                 ))}
